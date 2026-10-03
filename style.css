@@ -36,21 +36,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 96px;
+  min-height: 90px;
   border-bottom: 1px solid var(--line);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: inherit;
   text-decoration: none;
 }
 
 .brand-mark {
-  width: 54px;
-  height: 48px;
+  width: 76px;
+  height: 30px;
   color: var(--petrol);
 }
 
@@ -86,15 +86,15 @@ body {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(310px, .75fr);
-  gap: clamp(42px, 7vw, 92px);
+  gap: clamp(40px, 6vw, 82px);
   align-items: center;
-  min-height: 610px;
-  padding: 82px 0 74px;
+  min-height: 540px;
+  padding: 64px 0 60px;
 }
 
 .eyebrow,
 .card-kicker {
-  margin: 0 0 16px;
+  margin: 0 0 15px;
   color: var(--petrol);
   font-size: 12px;
   font-weight: 800;
@@ -106,22 +106,22 @@ h1,
 h2,
 h3 {
   color: var(--heading);
-  letter-spacing: -.035em;
+  letter-spacing: -.03em;
 }
 
 h1 {
-  max-width: 790px;
+  max-width: 760px;
   margin: 0;
-  font-size: clamp(46px, 5.8vw, 72px);
-  line-height: 1.02;
-  font-weight: 780;
+  font-size: clamp(36px, 4.2vw, 54px);
+  line-height: 1.08;
+  font-weight: 760;
 }
 
 .lead {
-  max-width: 760px;
-  margin: 30px 0 0;
+  max-width: 740px;
+  margin: 26px 0 0;
   color: var(--text);
-  font-size: clamp(18px, 1.7vw, 22px);
+  font-size: clamp(17px, 1.45vw, 20px);
   line-height: 1.62;
 }
 
@@ -130,8 +130,8 @@ h1 {
   gap: 13px;
   align-items: flex-start;
   max-width: 650px;
-  margin-top: 34px;
-  padding-top: 24px;
+  margin-top: 30px;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
 }
 
@@ -151,23 +151,23 @@ h1 {
 }
 
 .focus-card {
-  padding: 36px 34px;
+  padding: 32px 30px;
   border: 1px solid var(--line);
-  border-radius: 22px;
+  border-radius: 20px;
   background: rgba(255, 255, 255, .84);
   box-shadow: var(--shadow);
   backdrop-filter: blur(9px);
 }
 
 .focus-card h2 {
-  margin: 0 0 24px;
-  font-size: 30px;
-  line-height: 1.08;
+  margin: 0 0 22px;
+  font-size: 28px;
+  line-height: 1.1;
 }
 
 .focus-card ul {
   display: grid;
-  gap: 16px;
+  gap: 15px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -194,11 +194,11 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  padding: 0 0 72px;
+  padding: 0 0 68px;
 }
 
 .topics article {
-  padding: 28px;
+  padding: 26px;
   border-top: 1px solid var(--line);
 }
 
@@ -234,9 +234,9 @@ h1 {
 @media (max-width: 850px) {
   .hero {
     grid-template-columns: 1fr;
-    gap: 42px;
+    gap: 38px;
     min-height: 0;
-    padding: 66px 0 60px;
+    padding: 56px 0 54px;
   }
 
   .focus-card { max-width: 650px; }
@@ -249,11 +249,11 @@ h1 {
 @media (max-width: 560px) {
   .page-shell { width: min(100% - 32px, 1180px); }
 
-  .site-header { min-height: 82px; }
+  .site-header { min-height: 78px; }
 
   .brand-mark {
-    width: 44px;
-    height: 40px;
+    width: 62px;
+    height: 24px;
   }
 
   .brand-copy strong,
@@ -264,20 +264,20 @@ h1 {
     font-size: 11px;
   }
 
-  .hero { padding-top: 50px; }
+  .hero { padding-top: 44px; }
 
   h1 {
-    font-size: clamp(39px, 12vw, 52px);
-    line-height: 1.04;
+    font-size: clamp(32px, 9.5vw, 42px);
+    line-height: 1.08;
   }
 
   .lead {
-    margin-top: 24px;
-    font-size: 18px;
+    margin-top: 22px;
+    font-size: 17px;
   }
 
   .focus-card {
-    padding: 28px 24px;
+    padding: 26px 22px;
     border-radius: 18px;
   }
 
