@@ -63,45 +63,6 @@
   max-width:900px;
 }
 
-.imprint-text-button{
-  margin-top:14px;
-  padding:0;
-  border:0;
-  background:transparent;
-  color:var(--petrol-dark);
-  font:inherit;
-  font-size:13px;
-  font-weight:650;
-  text-decoration:underline;
-  text-underline-offset:3px;
-  cursor:pointer;
-}
-
-.imprint-text-button:hover,
-.imprint-text-button:focus-visible{
-  color:var(--petrol);
-}
-
-.imprint-text-button:disabled{
-  opacity:.55;
-  cursor:wait;
-}
-
-.imprint-accessible-text{
-  max-width:900px;
-  margin:18px 0 0;
-  padding:22px;
-  overflow:auto;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--light);
-  color:var(--text);
-  white-space:pre-wrap;
-  font:inherit;
-  font-size:16px;
-  line-height:1.6;
-}
-
 @media(max-width:560px){
   .legal-page{
     padding-top:46px;
@@ -109,11 +70,6 @@
   }
 
   .legal-intro{
-    font-size:15px;
-  }
-
-  .imprint-accessible-text{
-    padding:18px;
     font-size:15px;
   }
 }
