@@ -29,9 +29,10 @@
 
 .legal-intro{
   max-width:820px;
-  margin:22px 0 34px;
-  font-size:17px;
-  line-height:1.7;
+  margin:16px 0 30px;
+  font-size:16px;
+  line-height:1.6;
+  color:var(--muted);
 }
 
 .imprint-shell{
@@ -39,16 +40,16 @@
 }
 
 .imprint-status{
-  padding:18px 20px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--light);
-  font-size:15px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  font-size:14px;
   line-height:1.5;
 }
 
 .imprint-status[data-state="error"]{
-  border-style:dashed;
+  color:var(--text);
 }
 
 .imprint-turnstile{
@@ -63,21 +64,22 @@
 }
 
 .imprint-text-button{
-  margin-top:22px;
-  padding:11px 16px;
-  border:1px solid var(--petrol);
-  border-radius:8px;
-  background:#fff;
+  margin-top:14px;
+  padding:0;
+  border:0;
+  background:transparent;
   color:var(--petrol-dark);
   font:inherit;
-  font-size:14px;
-  font-weight:700;
+  font-size:13px;
+  font-weight:650;
+  text-decoration:underline;
+  text-underline-offset:3px;
   cursor:pointer;
 }
 
 .imprint-text-button:hover,
 .imprint-text-button:focus-visible{
-  background:var(--light);
+  color:var(--petrol);
 }
 
 .imprint-text-button:disabled{
@@ -87,8 +89,8 @@
 
 .imprint-accessible-text{
   max-width:900px;
-  margin:22px 0 0;
-  padding:24px;
+  margin:18px 0 0;
+  padding:22px;
   overflow:auto;
   border:1px solid var(--line);
   border-radius:12px;
@@ -100,14 +102,6 @@
   line-height:1.6;
 }
 
-.legal-note{
-  max-width:820px;
-  margin:26px 0 0;
-  color:var(--muted);
-  font-size:13px;
-  line-height:1.6;
-}
-
 @media(max-width:560px){
   .legal-page{
     padding-top:46px;
@@ -115,7 +109,7 @@
   }
 
   .legal-intro{
-    font-size:16px;
+    font-size:15px;
   }
 
   .imprint-accessible-text{
