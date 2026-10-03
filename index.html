@@ -13,62 +13,97 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page-shell">
-    <header class="site-header" aria-label="Herzkatheter Wissen">
+  <header class="site-header-wrap">
+    <div class="site-header">
       <a class="brand" href="/" aria-label="Herzkatheter Wissen Startseite">
         <img class="brand-logo" src="herzkatheterwissen-logo.png" alt="Herzkatheter Wissen">
       </a>
       <span class="status-pill">Im Aufbau</span>
-    </header>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div class="hero-copy">
+  <main>
+    <section class="hero-wrap">
+      <div class="hero">
         <p class="eyebrow">Aus der Praxis. Für die Praxis.</p>
         <h1>Praxiswissen für Pflege &amp; Assistenz im Herzkatheterlabor.</h1>
         <p class="lead">
           Hier entsteht eine unabhängige Wissensplattform rund um Herzkatheterlabor,
           Koronarangiographie, PCI, Material, Einarbeitung und den Arbeitsalltag im HKL.
         </p>
-        <div class="build-note">
-          <span class="build-dot" aria-hidden="true"></span>
-          <p><strong>Die Seite befindet sich gerade im Aufbau.</strong><br>Die ersten Inhalte entstehen bereits im Hintergrund.</p>
-        </div>
       </div>
-
-      <aside class="focus-card" aria-label="Geplante Themen">
-        <p class="card-kicker">Herzkatheter Wissen</p>
-        <h2>Was hier entsteht</h2>
-        <ul>
-          <li>Grundlagen für den Einstieg ins HKL</li>
-          <li>Koronarangiographie &amp; PCI verständlich erklärt</li>
-          <li>Material, Zugänge &amp; Nachsorge</li>
-          <li>Praxiswissen aus dem echten Arbeitsalltag</li>
-        </ul>
-      </aside>
     </section>
 
-    <section class="topics" aria-label="Themenschwerpunkte">
-      <article>
-        <span>01</span>
-        <h3>Für Einsteiger</h3>
-        <p>Den normalen Ablauf verstehen, bevor die Sonderfälle kommen.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <h3>Fachwissen</h3>
-        <p>Coro, PCI, Material und Verfahren praxisnah eingeordnet.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <h3>Praxis im HKL</h3>
-        <p>Abläufe, Zusammenarbeit und Dinge, die im Lehrbuch oft fehlen.</p>
-      </article>
-    </section>
+    <div class="content-shell">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="section-label">Herzkatheter Wissen</div>
+        <div class="intro-copy">
+          <h2 id="intro-title">Wissen, das im Alltag wirklich weiterhilft.</h2>
+          <p>
+            Herzkatheter Wissen richtet sich an Pflegekräfte und Mitarbeitende in der Assistenz,
+            die neu im HKL anfangen, Abläufe besser verstehen oder ihr Wissen vertiefen möchten.
+          </p>
+          <p>
+            Im Mittelpunkt stehen nicht Lehrbuchdefinitionen allein, sondern die Verbindung aus
+            Grundlagen, praktischen Abläufen und den vielen kleinen Dingen, die man im Arbeitsalltag
+            tatsächlich wissen muss.
+          </p>
+        </div>
+      </section>
 
-    <footer class="site-footer">
+      <section class="topics" aria-labelledby="topics-title">
+        <div class="topics-head">
+          <p class="section-label">Geplante Inhalte</p>
+          <h2 id="topics-title">Die ersten Themen</h2>
+        </div>
+
+        <div class="topic-list">
+          <article class="topic-row">
+            <p class="topic-type">Einstieg</p>
+            <div>
+              <h3>Für Einsteiger im Herzkatheterlabor</h3>
+              <p>Orientierung, typische Abläufe und ein verständlicher Einstieg in den Arbeitsalltag im HKL.</p>
+            </div>
+          </article>
+
+          <article class="topic-row">
+            <p class="topic-type">Diagnostik & Intervention</p>
+            <div>
+              <h3>Koronarangiographie &amp; PCI</h3>
+              <p>Von der diagnostischen Untersuchung bis zur Intervention – praxisnah erklärt und eingeordnet.</p>
+            </div>
+          </article>
+
+          <article class="topic-row">
+            <p class="topic-type">Praxiswissen</p>
+            <div>
+              <h3>Material, Zugänge &amp; Nachsorge</h3>
+              <p>Was verwendet wird, warum es verwendet wird und worauf vor, während und nach dem Eingriff zu achten ist.</p>
+            </div>
+          </article>
+
+          <article class="topic-row">
+            <p class="topic-type">Arbeitsalltag</p>
+            <div>
+              <h3>Einarbeitung, Zusammenarbeit &amp; Abläufe</h3>
+              <p>Praxiswissen für Situationen, die im Lehrbuch oft nur am Rand vorkommen.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="build-note" aria-label="Hinweis zum Aufbau">
+        <span class="build-dot" aria-hidden="true"></span>
+        <p><strong>Die Seite befindet sich aktuell im Aufbau.</strong> Die ersten Fachartikel entstehen bereits im Hintergrund.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer-wrap">
+    <div class="site-footer">
       <p>© 2026 Herzkatheter Wissen</p>
       <p>herzkatheterwissen.de</p>
-    </footer>
-  </main>
+    </div>
+  </footer>
 </body>
 </html>
