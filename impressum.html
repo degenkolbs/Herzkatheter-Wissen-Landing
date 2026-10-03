@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum – Herzkatheterwissen</title>
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#006D77">
+  <link rel="icon" type="image/png" href="herzkatheterwissen-favicon.png?v=2">
+  <link rel="shortcut icon" type="image/png" href="herzkatheterwissen-favicon.png?v=2">
+  <link rel="apple-touch-icon" href="herzkatheterwissen-favicon.png?v=2">
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <header class="site-header-wrap">
+    <div class="site-header">
+      <a class="brand" href="/" aria-label="Herzkatheterwissen Startseite">
+        <img class="brand-logo" src="herzkatheterwissen-logo.png" alt="Herzkatheterwissen">
+      </a>
+      <a class="legal-back" href="/">Zur Startseite</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-shell legal-page">
+      <p class="section-label">Rechtliches</p>
+      <h1>Impressum</h1>
+      <p class="legal-intro">
+        Die Anbieterangaben werden aus Datenschutzgründen nicht als statischer Text auf dieser Website gespeichert. Sie werden nach einer automatischen Sicherheitsprüfung serverseitig erzeugt und direkt im Browser dargestellt.
+      </p>
+
+      <section
+        class="imprint-shell"
+        data-hkw-imprint
+        data-endpoint="__IMPRINT_WORKER_ENDPOINT__"
+        data-sitekey="__TURNSTILE_SITE_KEY__"
+        aria-label="Anbieterangaben">
+
+        <div class="imprint-status" data-hkw-status aria-live="polite">
+          Anbieterangaben werden sicher geladen …
+        </div>
+
+        <div class="imprint-turnstile" data-hkw-turnstile></div>
+
+        <canvas
+          class="imprint-canvas"
+          data-hkw-canvas
+          aria-label="Impressumsangaben als geschützte Bilddarstellung"
+          hidden></canvas>
+
+        <button class="imprint-text-button" type="button" data-hkw-text-button hidden>
+          Textdarstellung für Screenreader anzeigen
+        </button>
+
+        <pre class="imprint-accessible-text" data-hkw-text tabindex="-1" hidden></pre>
+      </section>
+
+      <p class="legal-note">
+        Hinweis: Die Textdarstellung wird nur auf ausdrücklichen Wunsch und nach einer neuen Sicherheitsprüfung geladen.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer-wrap">
+    <div class="site-footer">
+      <p>© 2026 Herzkatheterwissen</p>
+      <p>herzkatheterwissen.de</p>
+    </div>
+  </footer>
+
+  <script src="hkw-imprint.js?v=1" defer></script>
+</body>
+</html>
