@@ -36,6 +36,20 @@
     return turnstilePromise;
   }
 
+  function isRetryableTurnstileError(errorCode) {
+    const code = Number.parseInt(String(errorCode || ""), 10);
+    if (!Number.isFinite(code)) return false;
+
+    const family = Math.floor(code / 1000);
+    return (
+      family === 300 ||
+      family === 600 ||
+      code === 110600 ||
+      code === 110620 ||
+      code === 200500
+    );
+  }
+
   class HkwImprint {
     constructor(root) {
       this.root = root;
@@ -111,10 +125,19 @@
           appearance: "interaction-only",
           execution: "render",
           theme: "auto",
+          retry: "auto",
+          "retry-interval": 3000,
+          "refresh-expired": "auto",
+          "refresh-timeout": "auto",
           callback: token => resolve(token),
-          "error-callback": () => reject(new Error("turnstile_verification_failed")),
-          "expired-callback": () => reject(new Error("turnstile_token_expired")),
-          "timeout-callback": () => reject(new Error("turnstile_challenge_timeout"))
+          "error-callback": errorCode => {
+            if (isRetryableTurnstileError(errorCode)) {
+              this.setStatus("Sicherheitsprüfung wird erneut versucht …");
+              return;
+            }
+            reject(new Error(`turnstile_${errorCode || "verification_failed"}`));
+          },
+          "unsupported-callback": () => reject(new Error("turnstile_browser_unsupported"))
         });
       });
     }
@@ -163,7 +186,7 @@
       }
 
       if (String(error?.message || "").startsWith("turnstile_")) {
-        this.setStatus("Die Sicherheitsprüfung konnte nicht geladen werden. Bitte die Seite neu laden.", true);
+        this.setStatus("Die Sicherheitsprüfung konnte nicht abgeschlossen werden. Bitte die Seite neu laden.", true);
         return;
       }
 
