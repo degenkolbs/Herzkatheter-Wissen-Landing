@@ -1,30 +1,24 @@
-# Herzkatheterwissen – Landingpage
+# Herzkatheter-Wissen Landingpage
 
-Öffentliche Landingpage für **herzkatheterwissen.de** während der Aufbauphase von Herzkatheterwissen.
+Öffentliche Landingpage für `herzkatheterwissen.de`.
 
-## Zweck
+Die Seite dient als vorgeschaltete öffentliche Projektseite für Herzkatheterwissen, solange die eigentliche Website noch aufgebaut wird.
 
-Diese Seite dient als neutrale öffentliche Präsenz für die Domain, bis die eigentliche WordPress-Seite veröffentlicht wird.
+## Dateien
 
-## Enthalten
+- `index.html` – Landingpage
+- `impressum.html` – Impressumsseite
+- `style.css` – Styling der Landingpage
+- `legal.css` – Styling der Impressumsseite
+- `hkw-imprint.js` – Laden der Impressumsdaten
+- `herzkatheterwissen-logo.png` – Logo
+- `herzkatheterwissen-favicon.png` – Favicon
+- `CNAME` – Custom Domain für GitHub Pages
 
-- Landingpage (`index.html`)
-- Impressum (`impressum.html`)
-- Styles (`style.css`, `legal.css`)
-- Logo und Favicon
-- `CNAME` für `herzkatheterwissen.de`
+## Domain
 
-## Datenschutz / Impressum
+`herzkatheterwissen.de`
 
-Die öffentlichen Anbieterangaben werden nicht direkt im Git-Repository gespeichert. Das Impressum lädt die öffentlichen Angaben über einen vorgeschalteten Worker.
+## Hinweis
 
-## Google / Analytics – Setup nach Merge von PR #1
-
-1. Prüfen, ob `https://herzkatheterwissen.de/robots.txt` und `https://herzkatheterwissen.de/sitemap.xml` erreichbar sind.
-2. In Google Search Console eine **Domain-Property** `herzkatheterwissen.de` anlegen.
-3. Den von Google erzeugten DNS-TXT-Eintrag in Cloudflare DNS hinzufügen und die Property bestätigen.
-4. In Search Console unter **Sitemaps** `sitemap.xml` einreichen.
-5. `https://herzkatheterwissen.de/` über die **URL-Prüfung** testen und bei Bedarf **Indexierung beantragen**.
-6. In Cloudflare **Web Analytics** für `herzkatheterwissen.de` aktivieren. Bei einer über Cloudflare geproxied Domain ist kein zusätzlicher Tracking-Code auf der Seite nötig, wenn die automatische Einrichtung verwendet wird.
-
-Die aktuelle Sitemap enthält bewusst nur die Landingpage. Beim späteren Website-Launch muss sie durch die Sitemap der eigentlichen Website ersetzt bzw. erweitert werden.
+Die eigentliche Website wird separat entwickelt. Dieses Repository ist nur für die öffentliche Landingpage vorgesehen.
