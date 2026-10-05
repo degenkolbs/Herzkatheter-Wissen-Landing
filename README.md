@@ -2,4 +2,4 @@
 
 Öffentliche Landingpage für `herzkatheterwissen.de`.
 
-> Hinweis: Dieser Branch dient ausschließlich zur Vorbereitung von `robots.txt` und `sitemap.xml`.
+Die Seite ist die temporäre öffentliche Projektseite während des Aufbaus der eigentlichen Wissensplattform.
