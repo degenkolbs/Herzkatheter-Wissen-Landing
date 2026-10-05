@@ -1,29 +1,30 @@
-# Herzkatheter Wissen – Landingpage
+# Herzkatheterwissen – Landingpage
 
-Öffentliche, statische Übergangsseite für `herzkatheterwissen.de`.
+Öffentliche Landingpage für **herzkatheterwissen.de** während der Aufbauphase von Herzkatheterwissen.
 
 ## Zweck
 
-Die eigentliche WordPress-Seite von Herzkatheter Wissen wird derzeit lokal/offline aufgebaut. Dieses Repository enthält bewusst nur eine kleine öffentliche Landingpage für GitHub Pages.
+Diese Seite dient als neutrale öffentliche Präsenz für die Domain, bis die eigentliche WordPress-Seite veröffentlicht wird.
 
-## GitHub Pages
+## Enthalten
 
-Empfohlene Einstellung:
+- Landingpage (`index.html`)
+- Impressum (`impressum.html`)
+- Styles (`style.css`, `legal.css`)
+- Logo und Favicon
+- `CNAME` für `herzkatheterwissen.de`
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ (root)`
-- Custom domain: `herzkatheterwissen.de`
-- HTTPS erzwingen, sobald GitHub das Zertifikat bereitgestellt hat
+## Datenschutz / Impressum
 
-## DNS
+Die öffentlichen Anbieterangaben werden nicht direkt im Git-Repository gespeichert. Das Impressum lädt die öffentlichen Angaben über einen vorgeschalteten Worker.
 
-Die Domain bleibt beim bestehenden DNS-Anbieter. Für GitHub Pages werden die von GitHub dokumentierten Apex-A-Records gesetzt; optional kann `www` per CNAME auf die GitHub-Pages-Adresse zeigen.
+## Google / Analytics – Setup nach Merge von PR #1
 
-## Dateien
+1. Prüfen, ob `https://herzkatheterwissen.de/robots.txt` und `https://herzkatheterwissen.de/sitemap.xml` erreichbar sind.
+2. In Google Search Console eine **Domain-Property** `herzkatheterwissen.de` anlegen.
+3. Den von Google erzeugten DNS-TXT-Eintrag in Cloudflare DNS hinzufügen und die Property bestätigen.
+4. In Search Console unter **Sitemaps** `sitemap.xml` einreichen.
+5. `https://herzkatheterwissen.de/` über die **URL-Prüfung** testen und bei Bedarf **Indexierung beantragen**.
+6. In Cloudflare **Web Analytics** für `herzkatheterwissen.de` aktivieren. Bei einer über Cloudflare geproxied Domain ist kein zusätzlicher Tracking-Code auf der Seite nötig, wenn die automatische Einrichtung verwendet wird.
 
-- `index.html` – Inhalt der Landingpage
-- `style.css` – HKW-Design
-- `CNAME` – Custom Domain für GitHub Pages
-
-Die vollständigen Fachinhalte, Artikelentwürfe und internen Dokumente gehören **nicht** in dieses öffentliche Repository.
+Die aktuelle Sitemap enthält bewusst nur die Landingpage. Beim späteren Website-Launch muss sie durch die Sitemap der eigentlichen Website ersetzt bzw. erweitert werden.
