@@ -1,24 +1,24 @@
 # Herzkatheterwissen Landingpage
 
-Öffentliche Landingpage für **herzkatheterwissen.de**.
+Öffentliche Landingpage für `herzkatheterwissen.de`.
 
-Die Seite dient als vorgeschaltete öffentliche Projektseite während des Aufbaus der eigentlichen Herzkatheterwissen-Plattform.
+## Zweck
 
-## Dateien
+Die Landingpage dient als öffentliche Vorschaltseite, solange die eigentliche Website von Herzkatheterwissen noch aufgebaut wird.
 
-- `index.html` – Landingpage
-- `style.css` – Styles der Landingpage
-- `impressum.html` – Impressumsseite
-- `legal.css` – Styles für die Impressumsseite
-- `hkw-imprint.js` – lädt die Anbieterangaben
+## Bestandteile
+
+- `index.html` – Startseite
+- `style.css` – Hauptstylesheet
+- `impressum.html` – Impressum
+- `legal.css` – Styles für rechtliche Seiten
+- `hkw-imprint.js` – clientseitiges Laden der Impressumsdaten
 - `herzkatheterwissen-logo.png` – Logo
 - `herzkatheterwissen-favicon.png` – Favicon
-- `CNAME` – Custom Domain für GitHub Pages
+- `CNAME` – Domain-Zuordnung für GitHub Pages
 
 ## Domain
 
-`herzkatheterwissen.de`
+`https://herzkatheterwissen.de`
 
-## Hinweis
-
-Die eigentliche Website wird separat entwickelt. Dieses Repository enthält nur die öffentliche Landingpage.
+Die eigentliche Website wird später separat veröffentlicht und ersetzt diese Landingpage.
